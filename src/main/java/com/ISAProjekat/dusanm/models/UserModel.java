@@ -1,11 +1,13 @@
 package com.ISAProjekat.dusanm.models;
 
+import com.ISAProjekat.dusanm.validators.ContactNumberConstraint;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import lombok.Builder;
 import lombok.Data;
-import com.ISAProjekat.dusanm.validators.ContactNumberConstraint;
 
 @Data
+@Builder
 public class UserModel {
     private int id;
     @NotBlank
@@ -15,4 +17,6 @@ public class UserModel {
     private String email;
     @ContactNumberConstraint
     private String contactNumber;
+    @NotBlank
+    private String password;
 }
