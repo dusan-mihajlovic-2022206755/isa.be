@@ -1,11 +1,9 @@
 package com.ISAProjekat.dusanm.mappers;
 
 import com.ISAProjekat.dusanm.entities.User;
-import com.ISAProjekat.dusanm.entities.UserProducts;
 import com.ISAProjekat.dusanm.models.RegisterUserModel;
 import com.ISAProjekat.dusanm.models.UserModel;
 import com.ISAProjekat.dusanm.models.UserPageModel;
-import com.ISAProjekat.dusanm.models.UserProductsModel;
 import org.springframework.data.domain.Page;
 import org.springframework.security.crypto.password.PasswordEncoder;
 

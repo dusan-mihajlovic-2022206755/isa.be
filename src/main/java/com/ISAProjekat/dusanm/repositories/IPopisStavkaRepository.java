@@ -1,8 +1,6 @@
 package com.ISAProjekat.dusanm.repositories;
 
-import com.ISAProjekat.dusanm.entities.Popis;
 import com.ISAProjekat.dusanm.entities.PopisStavka;
-import com.ISAProjekat.dusanm.entities.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
