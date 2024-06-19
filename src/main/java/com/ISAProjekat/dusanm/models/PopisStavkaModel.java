@@ -1,6 +1,5 @@
 package com.ISAProjekat.dusanm.models;
 
-import jakarta.persistence.Column;
 import lombok.Builder;
 import lombok.Data;
 
