@@ -33,7 +33,7 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests()
                 .requestMatchers("/auth/**")
                 .permitAll()
-                .requestMatchers("/user/get-user-products-list").hasAnyRole(RoleConstants.EMPLOYEE)
+                //.requestMatchers("/user/get-user-products-list").hasAnyRole(RoleConstants.EMPLOYEE)
                 .anyRequest()
                 .authenticated()
                 .and()
@@ -42,7 +42,7 @@ public class SecurityConfiguration {
                 .and()
                 .authenticationProvider(authenticationProvider)
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
-                .cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues());
+                .cors().configurationSource(corsConfigurationSource());
 
         return http.build();
     }

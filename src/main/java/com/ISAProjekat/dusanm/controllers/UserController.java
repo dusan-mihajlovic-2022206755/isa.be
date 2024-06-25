@@ -42,7 +42,7 @@ public class UserController {
         return ResponseEntity.ok(userService.create(userModel));
     }
 
-    @PutMapping("update")
+    @PostMapping("update")
     public ResponseEntity<?> update(@RequestBody @Valid UserModel userModel, BindingResult result) {
         if (result.hasErrors()) {
             return new ResponseEntity<>("Not updated!", HttpStatus.INTERNAL_SERVER_ERROR);
@@ -50,8 +50,7 @@ public class UserController {
 
         return ResponseEntity.ok(userService.update(userModel));
     }
-
-    @DeleteMapping("delete")
+    @PostMapping("delete")
     public ResponseEntity<?> delete(Integer userId) {
         userService.delete(userId);
         return ResponseEntity.ok("");
