@@ -4,9 +4,13 @@ import com.ISAProjekat.dusanm.entities.Popis;
 import com.ISAProjekat.dusanm.exceptions.user.UserAlreadyExistException;
 import com.ISAProjekat.dusanm.exceptions.user.UserException;
 import com.ISAProjekat.dusanm.mappers.PopisMapper;
+import com.ISAProjekat.dusanm.mappers.UserMapper;
 import com.ISAProjekat.dusanm.models.PopisModel;
+import com.ISAProjekat.dusanm.models.PopisPageModel;
+import com.ISAProjekat.dusanm.models.UserPageModel;
 import com.ISAProjekat.dusanm.repositories.IPopisRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,15 +28,20 @@ public class PopisService implements IPopisService {
         var result = popisRepository.findAll();
         return PopisMapper.toModelList(result);
     }
+    @Override
+    public PopisPageModel findPagedList(int userID, PageRequest pageRequest) {
+        var result = popisRepository.findByUser(userID, pageRequest);
 
+        return PopisMapper.toModelPagedList(result);
+    }
     @Override
     public PopisModel create(PopisModel model) {
         var popis = PopisMapper.toEntity(model);
 
-        var existingPopis = popisRepository.findByDate(model.getDatum());
+        var existingPopis = popisRepository.findByNaziv(model.getNaziv());
 
         if (existingPopis.isPresent())
-            throw new UserAlreadyExistException("Popis sa datumom " + model.getDatum() + " already exists");
+            throw new UserAlreadyExistException("Popis sa nazivom " + model.getNaziv() + " već postoji!");
 
         var savedUser = popisRepository.save(popis);
 

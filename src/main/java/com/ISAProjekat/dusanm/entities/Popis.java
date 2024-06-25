@@ -12,8 +12,8 @@ public class Popis {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "datum")
-    private Date datum;
+    @Column(name = "naziv")
+    private String naziv;
     @Column(name = "napomena")
     private String napomena;
     @Column(name = "active")

@@ -12,7 +12,7 @@ public class PopisMapper {
     public static Popis toEntity(PopisModel model) {
         Popis Popis = new Popis();
         Popis.setId(model.getId());
-        Popis.setDatum(model.getDatum());
+        Popis.setNaziv(model.getNaziv());
         Popis.setNapomena(model.getNapomena());
         Popis.setAktivan(model.getActive());
         return Popis;
@@ -21,7 +21,7 @@ public class PopisMapper {
     public static PopisModel toModel(Popis entity) {
         return PopisModel.builder()
                 .id(entity.getId())
-                .datum(entity.getDatum())
+                .naziv(entity.getNaziv())
                 .napomena(entity.getNapomena())
                 .active(entity.getAktivan())
                 .build();

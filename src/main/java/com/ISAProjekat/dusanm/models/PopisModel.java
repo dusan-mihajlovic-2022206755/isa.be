@@ -10,7 +10,7 @@ import java.util.List;
 @Builder
 public class PopisModel {
     private int id;
-    private Date datum;
+    private String naziv;
     private String napomena;
     private Boolean active;
     private int idUser;
