@@ -3,13 +3,9 @@ package com.ISAProjekat.dusanm.services;
 import com.ISAProjekat.dusanm.exceptions.user.UserAlreadyExistException;
 import com.ISAProjekat.dusanm.exceptions.user.UserException;
 import com.ISAProjekat.dusanm.mappers.UserMapper;
-import com.ISAProjekat.dusanm.mappers.UserProductsMapper;
 import com.ISAProjekat.dusanm.models.UserModel;
 import com.ISAProjekat.dusanm.models.UserPageModel;
-import com.ISAProjekat.dusanm.models.UserProductsModel;
-import com.ISAProjekat.dusanm.repositories.IUserProductsRepository;
 import com.ISAProjekat.dusanm.repositories.IUserRepository;
-import jdk.jshell.spi.ExecutionControl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -21,7 +17,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserService implements IUserService {
     private final IUserRepository userRepository;
-    private final IUserProductsRepository userProductsRepository;
     private final BCryptPasswordEncoder passwordEncoder;
 
     @Override
@@ -65,11 +60,5 @@ public class UserService implements IUserService {
     public void delete(Integer userId) {
         var entity = userRepository.findById(userId).orElseThrow(() -> new UserException("User Not Found"));
         userRepository.delete(entity);
-    }
-
-    @Override
-    public List<UserProductsModel> findUserProductsAll() {
-        var result = userProductsRepository.findAll();
-        return UserProductsMapper.toModelList(result);
     }
 }

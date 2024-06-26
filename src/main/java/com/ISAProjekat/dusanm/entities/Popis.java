@@ -1,9 +1,11 @@
 package com.ISAProjekat.dusanm.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "popis")
@@ -18,8 +20,15 @@ public class Popis {
     private String napomena;
     @Column(name = "active")
     private Boolean aktivan;
-//    @ManyToMany(cascade = CascadeType.ALL)
-//    @JoinTable(name = "product_categories",
-//            joinColumns = @JoinColumn(name = "product_id", referencedColumnName = "id"),
-//            inverseJoinColumns = @JoinColumn(name = "category_id", referencedColumnName = "id"))
+
+    @ManyToMany
+    @JoinTable(
+            name = "users_popis",
+            joinColumns = @JoinColumn(name = "id_popis"),
+            inverseJoinColumns = @JoinColumn(name = "id_users")
+    )
+    private List<User> users;
+
+    @OneToMany(mappedBy = "popis")
+    private List<PopisStavka> popisStavke;
 }

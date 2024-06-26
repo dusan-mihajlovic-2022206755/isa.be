@@ -16,9 +16,6 @@ public class PopisStavka {
     @Column(name = "id_artikal")
     private Integer artikalID;
 
-    @Column(name = "id_popis")
-    private Integer popisID;
-
     @Column(name = "id_user")
     private Integer userID;
 
@@ -27,4 +24,8 @@ public class PopisStavka {
 
     @Column(name = "vreme_popisivanja")
     private Date vremePopisivanja;
+
+    @ManyToOne
+    @JoinColumn(name = "id_popis")
+    private Popis popis;
 }

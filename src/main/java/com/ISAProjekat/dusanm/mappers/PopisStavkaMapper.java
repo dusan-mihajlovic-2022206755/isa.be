@@ -1,8 +1,11 @@
 package com.ISAProjekat.dusanm.mappers;
 
+import com.ISAProjekat.dusanm.entities.Popis;
 import com.ISAProjekat.dusanm.entities.PopisStavka;
 import com.ISAProjekat.dusanm.models.PopisStavkaModel;
 import com.ISAProjekat.dusanm.models.PopisStavkaPageModel;
+import com.ISAProjekat.dusanm.repositories.IPopisRepository;
+import com.ISAProjekat.dusanm.repositories.ITokenRepository;
 import org.springframework.data.domain.Page;
 
 import java.util.ArrayList;
@@ -13,10 +16,11 @@ public class PopisStavkaMapper {
         PopisStavka popisStavka = new PopisStavka();
         popisStavka.setId(model.getId());
         popisStavka.setArtikalID(model.getArtikalID());
-        popisStavka.setPopisID(model.getPopisID());
         popisStavka.setUserID(model.getUserID());
         popisStavka.setKolicina(model.getKolicina());
         popisStavka.setVremePopisivanja(model.getVremePopisivanja());
+//        Popis popis = fetchPopisById(model.getPopisID()); // Replace with your actual method to fetch Popis
+//        popisStavka.setPopis(popis);
         return popisStavka;
     }
 
@@ -24,7 +28,6 @@ public class PopisStavkaMapper {
         return PopisStavkaModel.builder()
                 .id(entity.getId())
                 .artikalID(entity.getArtikalID())
-                .popisID(entity.getPopisID())
                 .userID(entity.getUserID())
                 .kolicina(entity.getKolicina())
                 .vremePopisivanja(entity.getVremePopisivanja())

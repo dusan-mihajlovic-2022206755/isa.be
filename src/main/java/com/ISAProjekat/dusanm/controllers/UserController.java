@@ -2,10 +2,8 @@ package com.ISAProjekat.dusanm.controllers;
 
 import com.ISAProjekat.dusanm.models.UserModel;
 import com.ISAProjekat.dusanm.models.UserPageModel;
-import com.ISAProjekat.dusanm.models.UserProductsModel;
 import com.ISAProjekat.dusanm.services.IUserService;
 import jakarta.validation.Valid;
-import jakarta.validation.ValidationException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
@@ -25,11 +23,6 @@ public class UserController {
     @GetMapping("get-list")
     public List<UserModel> getList() {
         return userService.findAll();
-    }
-
-    @GetMapping("get-user-products-list")
-    public List<UserProductsModel> getUserProductsList() {
-        return userService.findUserProductsAll();
     }
 
     @GetMapping("get-page-list")
