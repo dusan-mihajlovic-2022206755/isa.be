@@ -1,0 +1,312 @@
+Updatecheck<|||>3<|||>1
+DoUsageStatistics<|||>3<|||>1
+UpdatecheckLastrun<|||>1<|||>2024-06-27 09:18:42
+LastUsageStatisticCall<|||>1<|||>2024-06-23 15:21:16
+LastSessions<|||>1<|||>ISA
+LastActiveSession<|||>1<|||>ISA
+SessionManager_WindowLeft<|||>3<|||>1311
+SessionManager_WindowTop<|||>3<|||>81
+ColWidths_connform.ListSessions<|||>1<|||>163,50,50,50,50,50,69
+ColsVisible_connform.ListSessions<|||>1<|||>0,1,4,6
+ColPositions_connform.ListSessions<|||>1<|||>0,1,2,3,4,5,6
+ColSort_connform.ListSessions<|||>1<|||>0,1
+CreateDbCollation<|||>1<|||>utf8_unicode_ci
+ColWidths_frmTableEditor.listColumns<|||>1<|||>58,100,154,90,60,65,50,117,130,140,100,100
+ColsVisible_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11
+ColPositions_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11
+ColSort_frmTableEditor.listColumns<|||>1<|||>-1,0
+ColWidths_frmTableEditor.treeIndexes<|||>1<|||>744,100,80,120
+ColsVisible_frmTableEditor.treeIndexes<|||>1<|||>0,1,2,3
+ColPositions_frmTableEditor.treeIndexes<|||>1<|||>0,1,2,3
+ColSort_frmTableEditor.treeIndexes<|||>1<|||>-1,0
+ColWidths_frmTableEditor.listForeignKeys<|||>1<|||>497,149,100,144,80,80
+ColsVisible_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
+ColPositions_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
+ColSort_frmTableEditor.listForeignKeys<|||>1<|||>-1,0
+ColWidths_frmTableEditor.listCheckConstraints<|||>1<|||>200,420
+ColsVisible_frmTableEditor.listCheckConstraints<|||>1<|||>0,1
+ColPositions_frmTableEditor.listCheckConstraints<|||>1<|||>0,1
+ColSort_frmTableEditor.listCheckConstraints<|||>1<|||>-1,0
+sqloutheight<|||>3<|||>80
+MainWinOnMonitor<|||>3<|||>0
+MainWinLeft<|||>3<|||>1099
+MainWinTop<|||>3<|||>534
+MainWinWidth<|||>3<|||>1466
+MainWinHeight<|||>3<|||>759
+ColWidths_MainForm.ListDatabases<|||>1<|||>150,80,50,50,50,50,50,50,50,50,120
+ColsVisible_MainForm.ListDatabases<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10
+ColPositions_MainForm.ListDatabases<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10
+ColSort_MainForm.ListDatabases<|||>1<|||>0,0
+ColWidths_MainForm.ListVariables<|||>1<|||>160,200,428
+ColsVisible_MainForm.ListVariables<|||>1<|||>0,1,2
+ColPositions_MainForm.ListVariables<|||>1<|||>0,1,2
+ColSort_MainForm.ListVariables<|||>1<|||>0,0
+ColWidths_MainForm.ListStatus<|||>1<|||>160,428,100,100
+ColsVisible_MainForm.ListStatus<|||>1<|||>0,1,2,3
+ColPositions_MainForm.ListStatus<|||>1<|||>0,1,2,3
+ColSort_MainForm.ListStatus<|||>1<|||>0,0
+ColWidths_MainForm.ListProcesses<|||>1<|||>70,80,80,80,80,50,50,298
+ColsVisible_MainForm.ListProcesses<|||>1<|||>0,1,2,3,4,5,6,7
+ColPositions_MainForm.ListProcesses<|||>1<|||>0,1,2,3,4,5,6,7
+ColSort_MainForm.ListProcesses<|||>1<|||>0,1
+ColWidths_MainForm.ListCommandStats<|||>1<|||>120,100,100,100,368
+ColsVisible_MainForm.ListCommandStats<|||>1<|||>0,1,2,3,4
+ColPositions_MainForm.ListCommandStats<|||>1<|||>0,1,2,3,4
+ColSort_MainForm.ListCommandStats<|||>1<|||>1,1
+ColWidths_MainForm.ListTables<|||>1<|||>120,70,70,120,120,70,100,50,70,70,70,70,70,90,120,70,70,70,50
+ColsVisible_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,18
+ColPositions_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18
+ColSort_MainForm.ListTables<|||>1<|||>0,0
+GridExportOutputCopy<|||>3<|||>0
+GridExportOutputFile<|||>3<|||>1
+GridExportFilename<|||>1<|||>C:\Users\dusan\OneDrive\Desktop\csvcsv.csv
+GridExportRecentFiles<|||>1<|||>C:\Users\dusan\OneDrive\Desktop\csvcsv.csv
+FileDialogEncoding_loaddataform<|||>3<|||>0
+loadfilename<|||>1<|||>C:\Users\dusan\OneDrive\Desktop\csvcsv.csv
+CSVImportDuplicateHandling<|||>3<|||>0
+CSVImportParseMethod<|||>3<|||>1
+querymemoheight<|||>3<|||>100
+SessionManager_WindowWidth<|||>3<|||>1249
+SessionManager_WindowHeight<|||>3<|||>860
+SessionManager_ListWidth<|||>3<|||>336
+ColWidths_frmRoutineEditor.listParameters<|||>1<|||>50,394,90,70
+ColsVisible_frmRoutineEditor.listParameters<|||>1<|||>0,1,2,3
+ColPositions_frmRoutineEditor.listParameters<|||>1<|||>0,1,2,3
+ColSort_frmRoutineEditor.listParameters<|||>1<|||>-1,0
+ExportSQL_CreateDatabases<|||>3<|||>1
+ExportSQL_CreateTables<|||>3<|||>1
+ExportSQL_Filenames<|||>1<|||>C:\isa.be\src\main\java\com\ISAProjekat\dusanm\dump baze.sql<{{{><}}}>C:\Users\dusan\OneDrive\Desktop\IPODB_2022206755.sql<{{{><}}}>
+dbtreewidth<|||>3<|||>300
+ExportSQL_Output<|||>3<|||>0
+SQLFile0<|||>1<|||>C:\Users\dusan\AppData\Roaming\HeidiSQL\Backups\query-tab-2024-06-26_22-47-35-318.sql
+SQLFile1<|||>1<|||>C:\Users\dusan\OneDrive\Desktop\IPODB_2022206755.sql
+SQLFile2<|||>1<|||>C:\Users\dusan\Downloads\veterina.sql
+ExportSQL_DataHow<|||>3<|||>4
+Servers\Dule\SessionCreated<|||>1<|||>2023-09-28 11:12:42
+Servers\Dule\Host<|||>1<|||>127.0.0.1
+Servers\Dule\WindowsAuth<|||>3<|||>0
+Servers\Dule\CleartextPluginEnabled<|||>3<|||>0
+Servers\Dule\User<|||>1<|||>root
+Servers\Dule\Password<|||>1<|||>1
+Servers\Dule\LoginPrompt<|||>3<|||>0
+Servers\Dule\Port<|||>1<|||>3306
+Servers\Dule\NetType<|||>3<|||>0
+Servers\Dule\Compressed<|||>3<|||>0
+Servers\Dule\LocalTimeZone<|||>3<|||>0
+Servers\Dule\QueryTimeout<|||>3<|||>30
+Servers\Dule\KeepAlive<|||>3<|||>20
+Servers\Dule\FullTableStatus<|||>3<|||>1
+Servers\Dule\Databases<|||>1<|||>
+Servers\Dule\Library<|||>1<|||>libmysql-6.1.dll
+Servers\Dule\Comment<|||>1<|||>
+Servers\Dule\StartupScriptFilename<|||>1<|||>
+Servers\Dule\TreeBackground<|||>3<|||>536870911
+Servers\Dule\SSHtunnelActive<|||>3<|||>0
+Servers\Dule\SshExecutable<|||>1<|||>
+Servers\Dule\SSHtunnelHost<|||>1<|||>
+Servers\Dule\SSHtunnelHostPort<|||>3<|||>22
+Servers\Dule\SSHtunnelUser<|||>1<|||>
+Servers\Dule\SSHtunnelPassword<|||>1<|||>5
+Servers\Dule\SSHtunnelTimeout<|||>3<|||>4
+Servers\Dule\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Dule\SSHtunnelPort<|||>3<|||>3307
+Servers\Dule\SSL_Active<|||>3<|||>0
+Servers\Dule\SSL_Key<|||>1<|||>
+Servers\Dule\SSL_Cert<|||>1<|||>
+Servers\Dule\SSL_CA<|||>1<|||>
+Servers\Dule\SSL_Cipher<|||>1<|||>
+Servers\Dule\IgnoreDatabasePattern<|||>1<|||>
+Servers\Dule\LogFileDdl<|||>3<|||>0
+Servers\Dule\LogFileDml<|||>3<|||>0
+Servers\Dule\LogFilePath<|||>1<|||>C:\Users\dusan\AppData\Roaming\HeidiSQL\Logs\%session\%db\%y%m%d.sql
+Servers\Dule\ServerVersionFull<|||>1<|||>10.4.28-MariaDB - mariadb.org binary distribution
+Servers\Dule\ConnectCount<|||>3<|||>9
+Servers\Dule\ServerVersion<|||>3<|||>100428
+Servers\Dule\LastConnect<|||>1<|||>2024-06-02 19:38:50
+Servers\Dule\lastUsedDB<|||>1<|||>
+Servers\Dule\RefusedCount<|||>3<|||>1
+Servers\Dule\ipodb_2022206755|departman\Sort<|||>1<|||>0_departman_id|
+Servers\Dule\QueryHistory\1<|||>1<|||>2024-01-15 00:03:42|ipodb_2022206755|0|SELECT d.ime , a.*<{{{><}}}>FROM agent a<{{{><}}}> INNER JOIN departman d ON a.agent_id = d.departman_id
+Servers\Dule\veterina|zivotinja\Sort<|||>1<|||>0_vrsta|
+Servers\dule2022206755\SessionCreated<|||>1<|||>2024-01-15 00:29:53
+Servers\dule2022206755\Host<|||>1<|||>127.0.0.1
+Servers\dule2022206755\WindowsAuth<|||>3<|||>0
+Servers\dule2022206755\CleartextPluginEnabled<|||>3<|||>0
+Servers\dule2022206755\User<|||>1<|||>root
+Servers\dule2022206755\Password<|||>1<|||>6
+Servers\dule2022206755\LoginPrompt<|||>3<|||>0
+Servers\dule2022206755\Port<|||>1<|||>3306
+Servers\dule2022206755\NetType<|||>3<|||>0
+Servers\dule2022206755\Compressed<|||>3<|||>0
+Servers\dule2022206755\LocalTimeZone<|||>3<|||>0
+Servers\dule2022206755\QueryTimeout<|||>3<|||>30
+Servers\dule2022206755\KeepAlive<|||>3<|||>20
+Servers\dule2022206755\FullTableStatus<|||>3<|||>1
+Servers\dule2022206755\Databases<|||>1<|||>
+Servers\dule2022206755\Library<|||>1<|||>libmariadb.dll
+Servers\dule2022206755\Comment<|||>1<|||>
+Servers\dule2022206755\StartupScriptFilename<|||>1<|||>
+Servers\dule2022206755\TreeBackground<|||>3<|||>536870911
+Servers\dule2022206755\SSHtunnelActive<|||>3<|||>0
+Servers\dule2022206755\SshExecutable<|||>1<|||>
+Servers\dule2022206755\SSHtunnelHost<|||>1<|||>
+Servers\dule2022206755\SSHtunnelHostPort<|||>3<|||>22
+Servers\dule2022206755\SSHtunnelUser<|||>1<|||>
+Servers\dule2022206755\SSHtunnelPassword<|||>1<|||>4
+Servers\dule2022206755\SSHtunnelTimeout<|||>3<|||>4
+Servers\dule2022206755\SSHtunnelPrivateKey<|||>1<|||>
+Servers\dule2022206755\SSHtunnelPort<|||>3<|||>3307
+Servers\dule2022206755\SSL_Active<|||>3<|||>0
+Servers\dule2022206755\SSL_Key<|||>1<|||>
+Servers\dule2022206755\SSL_Cert<|||>1<|||>
+Servers\dule2022206755\SSL_CA<|||>1<|||>
+Servers\dule2022206755\SSL_Cipher<|||>1<|||>
+Servers\dule2022206755\IgnoreDatabasePattern<|||>1<|||>
+Servers\dule2022206755\LogFileDdl<|||>3<|||>0
+Servers\dule2022206755\LogFileDml<|||>3<|||>0
+Servers\dule2022206755\LogFilePath<|||>1<|||>C:\Users\dusan\AppData\Roaming\HeidiSQL\Logs\%session\%db\%y%m%d.sql
+Servers\dule2022206755\ServerVersionFull<|||>1<|||>10.4.28-MariaDB - mariadb.org binary distribution
+Servers\dule2022206755\ConnectCount<|||>3<|||>2
+Servers\dule2022206755\ServerVersion<|||>3<|||>100428
+Servers\dule2022206755\LastConnect<|||>1<|||>2024-06-07 14:45:09
+Servers\dule2022206755\lastUsedDB<|||>1<|||>vebbaziranivezbe
+Servers\ISA\SessionCreated<|||>1<|||>2024-06-07 11:00:54
+Servers\ISA\Host<|||>1<|||>127.0.0.1
+Servers\ISA\WindowsAuth<|||>3<|||>0
+Servers\ISA\CleartextPluginEnabled<|||>3<|||>0
+Servers\ISA\User<|||>1<|||>root
+Servers\ISA\Password<|||>1<|||>8
+Servers\ISA\LoginPrompt<|||>3<|||>0
+Servers\ISA\Port<|||>1<|||>3306
+Servers\ISA\NetType<|||>3<|||>0
+Servers\ISA\Compressed<|||>3<|||>0
+Servers\ISA\LocalTimeZone<|||>3<|||>0
+Servers\ISA\QueryTimeout<|||>3<|||>30
+Servers\ISA\KeepAlive<|||>3<|||>20
+Servers\ISA\FullTableStatus<|||>3<|||>1
+Servers\ISA\Databases<|||>1<|||>isa
+Servers\ISA\Library<|||>1<|||>libmariadb.dll
+Servers\ISA\Comment<|||>1<|||>
+Servers\ISA\StartupScriptFilename<|||>1<|||>
+Servers\ISA\TreeBackground<|||>3<|||>536870911
+Servers\ISA\SSHtunnelActive<|||>3<|||>0
+Servers\ISA\SshExecutable<|||>1<|||>
+Servers\ISA\SSHtunnelHost<|||>1<|||>
+Servers\ISA\SSHtunnelHostPort<|||>3<|||>22
+Servers\ISA\SSHtunnelUser<|||>1<|||>
+Servers\ISA\SSHtunnelPassword<|||>1<|||>3
+Servers\ISA\SSHtunnelTimeout<|||>3<|||>4
+Servers\ISA\SSHtunnelPrivateKey<|||>1<|||>
+Servers\ISA\SSHtunnelPort<|||>3<|||>3307
+Servers\ISA\SSL_Active<|||>3<|||>0
+Servers\ISA\SSL_Key<|||>1<|||>
+Servers\ISA\SSL_Cert<|||>1<|||>
+Servers\ISA\SSL_CA<|||>1<|||>
+Servers\ISA\SSL_Cipher<|||>1<|||>
+Servers\ISA\IgnoreDatabasePattern<|||>1<|||>
+Servers\ISA\LogFileDdl<|||>3<|||>0
+Servers\ISA\LogFileDml<|||>3<|||>0
+Servers\ISA\LogFilePath<|||>1<|||>C:\Users\dusan\AppData\Roaming\HeidiSQL\Logs\%session\%db\%y%m%d.sql
+Servers\ISA\RefusedCount<|||>3<|||>1
+Servers\ISA\ServerVersionFull<|||>1<|||>10.4.28-MariaDB - mariadb.org binary distribution
+Servers\ISA\ConnectCount<|||>3<|||>13
+Servers\ISA\ServerVersion<|||>3<|||>100428
+Servers\ISA\LastConnect<|||>1<|||>2024-06-27 09:18:45
+Servers\ISA\lastUsedDB<|||>1<|||>isa
+Servers\ISA\isa|users_popis\Sort<|||>1<|||>1_id_popis|1_id_users|
+Servers\ISA\QueryHistory\1<|||>1<|||>2024-06-07 12:50:23|isa|47|-- Create users table<{{{><}}}>CREATE TABLE users (<{{{><}}}>    id INT AUTO_INCREMENT PRIMARY KEY,<{{{><}}}>    first_name VARCHAR(255),<{{{><}}}>    last_name VARCHAR(255),<{{{><}}}>    email VARCHAR(255) UNIQUE,<{{{><}}}>    contact_number VARCHAR(255),<{{{><}}}>    password VARCHAR(255)<{{{><}}}>);<{{{><}}}><{{{><}}}>-- Create roles table<{{{><}}}>CREATE TABLE roles (<{{{><}}}>    id INT AUTO_INCREMENT PRIMARY KEY,<{{{><}}}>    name VARCHAR(255) UNIQUE<{{{><}}}>);<{{{><}}}><{{{><}}}>-- Create user_roles table to handle many-to-many relationship<{{{><}}}>CREATE TABLE user_roles (<{{{><}}}>    user_id INT,<{{{><}}}>    role_id INT,<{{{><}}}>    PRIMARY KEY (user_id, role_id),<{{{><}}}>    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,<{{{><}}}>    FOREIGN KEY (role_id) REFERENCES roles(id) ON DELETE CASCADE<{{{><}}}>);
+Servers\ISA\QueryHistory\2<|||>1<|||>2024-06-07 13:30:36|isa|31|CREATE TABLE tokens (<{{{><}}}>    id INT AUTO_INCREMENT PRIMARY KEY,<{{{><}}}>    token VARCHAR(255) UNIQUE,<{{{><}}}>    refresh_token VARCHAR(255) UNIQUE,<{{{><}}}>    token_type ENUM('BEARER', 'OTHER_ENUM_VALUES') DEFAULT 'BEARER',<{{{><}}}>    revoked BOOLEAN,<{{{><}}}>    expired BOOLEAN,<{{{><}}}>    user_id INT,<{{{><}}}>    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL<{{{><}}}>);
+Servers\ISA\QueryHistory\3<|||>1<|||>2024-06-07 14:58:15|isa|16|<{{{><}}}>-- Dumping structure for table isa.users<{{{><}}}>CREATE TABLE IF NOT EXISTS `users` (<{{{><}}}>  `id` INT(10) NOT NULL AUTO_INCREMENT,<{{{><}}}>  `first_name` varchar(255) DEFAULT NULL,<{{{><}}}>  `last_name` varchar(255) DEFAULT NULL,<{{{><}}}>  `email` varchar(255) DEFAULT NULL,<{{{><}}}>  `contact_number` varchar(255) DEFAULT NULL,<{{{><}}}>  `password` varchar(255) DEFAULT NULL,<{{{><}}}>  PRIMARY KEY (`id`),<{{{><}}}>  UNIQUE KEY `email` (`email`)<{{{><}}}>) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;<{{{><}}}>
+Servers\ISA\QueryHistory\4<|||>1<|||>2024-06-07 15:11:15|isa|0|SET FOREIGN_KEY_CHECKS = 0;
+Servers\ISA\QueryHistory\5<|||>1<|||>2024-06-07 15:11:30|isa|0|SET FOREIGN_KEY_CHECKS = 1;
+Servers\ISA\QueryHistory\6<|||>1<|||>2024-06-08 23:00:22|isa|31|<{{{><}}}>SET FOREIGN_KEY_CHECKS = 0;<{{{><}}}><{{{><}}}>-- Create popis_stavka table<{{{><}}}>CREATE TABLE IF NOT EXISTS `popis_stavka` (<{{{><}}}>  `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,<{{{><}}}>  `id_popis` INT(10) UNSIGNED NOT NULL,<{{{><}}}>  `id_artikal` INT(10) UNSIGNED NOT NULL,<{{{><}}}>  `id_lokacija` INT(10) UNSIGNED NOT NULL,<{{{><}}}>  `kolicina` INT(11) NOT NULL,<{{{><}}}>  `id_user` INT(10) UNSIGNED NOT NULL COMMENT 'ko je popisao',<{{{><}}}>  `vreme_popisivanja` DATETIME NOT NULL,<{{{><}}}>  `deleted` BIT(1) NOT NULL DEFAULT b'0',<{{{><}}}>  PRIMARY KEY (`id`),<{{{><}}}>  KEY `fk_popis_stavka_artikal` (`id_artikal`),<{{{><}}}>  KEY `fk_popis_stavka_user` (`id_user`),<{{{><}}}>  KEY `fk_popis_stavka_popis` (`id_popis`),<{{{><}}}>  CONSTRAINT `fk_popis_stavka_artikal` FOREIGN KEY (`id_artikal`) REFERENCES `artikal` (`id`),<{{{><}}}>  CONSTRAINT `fk_popis_stavka_popis` FOREIGN KEY (`id_popis`) REFERENCES `popis` (`id`)<{{{><}}}>) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=UTF8_UNICODE_CI;<{{{><}}}><{{{><}}}>SET FOREIGN_KEY_CHECKS = 1;
+Servers\ISA\QueryHistory\8<|||>1<|||>2024-06-26 23:44:23|isa|0|SELECT * FROM popis p INNER JOIN users_popis up ON p.id = up.id_popis WHERE up.id_users = 2
+Servers\ISA\QueryHistory\7<|||>1<|||>2024-06-26 23:44:35|isa|0|SELECT p.* FROM popis p INNER JOIN users_popis up ON p.id = up.id_popis WHERE up.id_users = 2
+Servers\ISA\QueryHistory\10<|||>1<|||>2024-06-27 00:32:43|isa|0|SELECT 1<{{{><}}}> FROM users u<{{{><}}}> INNER JOIN user_roles ur ON u.id = ur.user_id<{{{><}}}>  WHERE u.id = 2 AND ur.role_id = 1<{{{><}}}><{{{><}}}><{{{><}}}>-- SELECT 1<{{{><}}}>--  FROM users u<{{{><}}}>--  INNER JOIN user_roles ur ON u.id = ur.user_id<{{{><}}}>--   WHERE u.id = (%:userID%) AND ur.role_id = (%:roleID%)
+Servers\ISA\QueryHistory\11<|||>1<|||>2024-06-27 00:32:56|isa|0|SELECT 1<{{{><}}}> FROM users u<{{{><}}}> INNER JOIN user_roles ur ON u.id = ur.user_id<{{{><}}}>  WHERE u.id = 2 AND ur.role_id = 1 LIMIT 1<{{{><}}}><{{{><}}}><{{{><}}}>-- SELECT 1<{{{><}}}>--  FROM users u<{{{><}}}>--  INNER JOIN user_roles ur ON u.id = ur.user_id<{{{><}}}>--   WHERE u.id = (%:userID%) AND ur.role_id = (%:roleID%)
+Servers\ISA\QueryHistory\9<|||>1<|||>2024-06-27 00:50:19|isa|0|SELECT 1<{{{><}}}> FROM users u<{{{><}}}> INNER JOIN user_roles ur ON u.id = ur.user_id<{{{><}}}>  WHERE u.id = 2 AND ur.role_id = 1 LIMIT 1<{{{><}}}><{{{><}}}><{{{><}}}>/*SELECT 1 FROM users u INNER JOIN user_roles ur ON u.id = ur.user_id WHERE u.id = (%:userID%) AND ur.role_id = (%:roleID%) LIMIT 1<{{{><}}}>*/
+Servers\ISA\QueryHistory\12<|||>1<|||>2024-06-27 10:21:14|isa|0|INSERT INTO user_roles(user_id, role_id)<{{{><}}}>VALUES(1, 1)<{{{><}}}><{{{><}}}>-- <{{{><}}}>-- INSERT INTO user_roles(user_id, role_id)<{{{><}}}>-- VALUES((%:userID%), (%:role_id%))
+Servers\Partija\SessionCreated<|||>1<|||>2024-06-02 19:36:04
+Servers\Partija\Host<|||>1<|||>127.0.0.1
+Servers\Partija\WindowsAuth<|||>3<|||>0
+Servers\Partija\CleartextPluginEnabled<|||>3<|||>0
+Servers\Partija\User<|||>1<|||>root
+Servers\Partija\Password<|||>1<|||>5
+Servers\Partija\LoginPrompt<|||>3<|||>0
+Servers\Partija\Port<|||>1<|||>3306
+Servers\Partija\NetType<|||>3<|||>0
+Servers\Partija\Compressed<|||>3<|||>0
+Servers\Partija\LocalTimeZone<|||>3<|||>0
+Servers\Partija\QueryTimeout<|||>3<|||>30
+Servers\Partija\KeepAlive<|||>3<|||>20
+Servers\Partija\FullTableStatus<|||>3<|||>1
+Servers\Partija\Databases<|||>1<|||>
+Servers\Partija\Library<|||>1<|||>libmysql-6.1.dll
+Servers\Partija\Comment<|||>1<|||>Igranje
+Servers\Partija\StartupScriptFilename<|||>1<|||>
+Servers\Partija\TreeBackground<|||>3<|||>536870911
+Servers\Partija\SSHtunnelActive<|||>3<|||>0
+Servers\Partija\SshExecutable<|||>1<|||>plink.exe
+Servers\Partija\SSHtunnelHost<|||>1<|||>
+Servers\Partija\SSHtunnelHostPort<|||>3<|||>22
+Servers\Partija\SSHtunnelUser<|||>1<|||>
+Servers\Partija\SSHtunnelPassword<|||>1<|||>6
+Servers\Partija\SSHtunnelTimeout<|||>3<|||>4
+Servers\Partija\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Partija\SSHtunnelPort<|||>3<|||>3307
+Servers\Partija\SSL_Active<|||>3<|||>0
+Servers\Partija\SSL_Key<|||>1<|||>
+Servers\Partija\SSL_Cert<|||>1<|||>
+Servers\Partija\SSL_CA<|||>1<|||>
+Servers\Partija\SSL_Cipher<|||>1<|||>
+Servers\Partija\IgnoreDatabasePattern<|||>1<|||>
+Servers\Partija\LogFileDdl<|||>3<|||>0
+Servers\Partija\LogFileDml<|||>3<|||>0
+Servers\Partija\LogFilePath<|||>1<|||>C:\Users\dusan\AppData\Roaming\HeidiSQL\Logs\%session\%db\%y%m%d.sql
+Servers\Partija\RefusedCount<|||>3<|||>5
+Servers\Partija\ServerVersionFull<|||>1<|||>10.4.28-MariaDB - mariadb.org binary distribution
+Servers\Partija\ConnectCount<|||>3<|||>3
+Servers\Partija\ServerVersion<|||>3<|||>100428
+Servers\Partija\LastConnect<|||>1<|||>2024-06-07 11:04:31
+Servers\Partija\lastUsedDB<|||>1<|||>prl_baza
+Servers\Vezbanje\SessionCreated<|||>1<|||>2023-12-08 23:05:06
+Servers\Vezbanje\Host<|||>1<|||>127.0.0.1
+Servers\Vezbanje\WindowsAuth<|||>3<|||>0
+Servers\Vezbanje\CleartextPluginEnabled<|||>3<|||>0
+Servers\Vezbanje\User<|||>1<|||>root
+Servers\Vezbanje\Password<|||>1<|||>6
+Servers\Vezbanje\LoginPrompt<|||>3<|||>0
+Servers\Vezbanje\Port<|||>1<|||>3306
+Servers\Vezbanje\NetType<|||>3<|||>0
+Servers\Vezbanje\Compressed<|||>3<|||>0
+Servers\Vezbanje\LocalTimeZone<|||>3<|||>0
+Servers\Vezbanje\QueryTimeout<|||>3<|||>30
+Servers\Vezbanje\KeepAlive<|||>3<|||>20
+Servers\Vezbanje\FullTableStatus<|||>3<|||>1
+Servers\Vezbanje\Databases<|||>1<|||>
+Servers\Vezbanje\Library<|||>1<|||>libmariadb.dll
+Servers\Vezbanje\Comment<|||>1<|||>
+Servers\Vezbanje\StartupScriptFilename<|||>1<|||>
+Servers\Vezbanje\TreeBackground<|||>3<|||>536870911
+Servers\Vezbanje\SSHtunnelActive<|||>3<|||>0
+Servers\Vezbanje\SshExecutable<|||>1<|||>
+Servers\Vezbanje\SSHtunnelHost<|||>1<|||>
+Servers\Vezbanje\SSHtunnelHostPort<|||>3<|||>22
+Servers\Vezbanje\SSHtunnelUser<|||>1<|||>
+Servers\Vezbanje\SSHtunnelPassword<|||>1<|||>4
+Servers\Vezbanje\SSHtunnelTimeout<|||>3<|||>4
+Servers\Vezbanje\SSHtunnelPrivateKey<|||>1<|||>
+Servers\Vezbanje\SSHtunnelPort<|||>3<|||>3307
+Servers\Vezbanje\SSL_Active<|||>3<|||>0
+Servers\Vezbanje\SSL_Key<|||>1<|||>
+Servers\Vezbanje\SSL_Cert<|||>1<|||>
+Servers\Vezbanje\SSL_CA<|||>1<|||>
+Servers\Vezbanje\SSL_Cipher<|||>1<|||>
+Servers\Vezbanje\IgnoreDatabasePattern<|||>1<|||>
+Servers\Vezbanje\LogFileDdl<|||>3<|||>0
+Servers\Vezbanje\LogFileDml<|||>3<|||>0
+Servers\Vezbanje\LogFilePath<|||>1<|||>C:\Users\dusan\AppData\Roaming\HeidiSQL\Logs\%session\%db\%y%m%d.sql
+Servers\Vezbanje\ServerVersionFull<|||>1<|||>10.4.28-MariaDB - mariadb.org binary distribution
+Servers\Vezbanje\ConnectCount<|||>3<|||>2
+Servers\Vezbanje\ServerVersion<|||>3<|||>100428
+Servers\Vezbanje\LastConnect<|||>1<|||>2024-05-20 01:06:29

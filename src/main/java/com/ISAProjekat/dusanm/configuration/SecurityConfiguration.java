@@ -1,5 +1,6 @@
 package com.ISAProjekat.dusanm.configuration;
 
+import com.ISAProjekat.dusanm.constants.RoleConstants;
 import com.ISAProjekat.dusanm.filters.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -29,11 +30,11 @@ public class SecurityConfiguration {
         http.csrf()
                 .disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/auth/**")
-                .permitAll()
-                //.requestMatchers("/user/get-user-products-list").hasAnyRole(RoleConstants.EMPLOYEE)
-                .anyRequest()
-                .authenticated()
+                .requestMatchers("/auth/**").permitAll()
+                .requestMatchers("/user/**").hasAnyRole(RoleConstants.ADMINISTRATOR)
+                .requestMatchers("/popis/**").hasAnyRole(RoleConstants.EMPLOYEE)
+                .requestMatchers("/popis-stavka/**").hasAnyRole(RoleConstants.EMPLOYEE)
+                .anyRequest().authenticated()
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
