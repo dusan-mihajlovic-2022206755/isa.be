@@ -1,5 +1,6 @@
 package com.ISAProjekat.dusanm.services;
 
+import com.ISAProjekat.dusanm.entities.User;
 import com.ISAProjekat.dusanm.exceptions.user.UserAlreadyExistException;
 import com.ISAProjekat.dusanm.exceptions.user.UserException;
 import com.ISAProjekat.dusanm.mappers.UserMapper;
@@ -41,8 +42,15 @@ public class UserService implements IUserService {
             throw new UserAlreadyExistException("User with email " + model.getEmail() + " already exists");
 
         var savedUser = userRepository.save(user);
-
+        saveRoles(model.getRoleID(), savedUser);
         return UserMapper.toModel(savedUser);
+    }
+
+    private void saveRoles(int roleID, User savedUser) {
+        userRepository.deleteRoles(savedUser.getId());
+        for (int i = roleID; i <= 2; i++) {
+            userRepository.insertRole(savedUser.getId(), i);
+        }
     }
 
     @Override
@@ -50,6 +58,7 @@ public class UserService implements IUserService {
         var entity = UserMapper.toEntity(model, passwordEncoder);
         try {
             var result = userRepository.save(entity);
+            saveRoles(model.getRoleID(), result);
             return UserMapper.toModel(result);
         } catch (Exception e) {
             throw new UserException(e.getMessage());

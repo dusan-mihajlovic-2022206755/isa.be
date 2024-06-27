@@ -19,4 +19,5 @@ public class UserModel {
     private String contactNumber;
     @NotBlank
     private String password;
+    private int roleID;
 }

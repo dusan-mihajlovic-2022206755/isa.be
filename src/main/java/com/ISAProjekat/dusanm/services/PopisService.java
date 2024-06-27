@@ -1,19 +1,17 @@
 package com.ISAProjekat.dusanm.services;
 
-import com.ISAProjekat.dusanm.entities.Popis;
+import com.ISAProjekat.dusanm.entities.PopisUser;
+import com.ISAProjekat.dusanm.exceptions.user.PopisException;
 import com.ISAProjekat.dusanm.exceptions.user.UserAlreadyExistException;
 import com.ISAProjekat.dusanm.exceptions.user.UserException;
 import com.ISAProjekat.dusanm.mappers.PopisMapper;
-import com.ISAProjekat.dusanm.mappers.UserMapper;
 import com.ISAProjekat.dusanm.models.PopisModel;
 import com.ISAProjekat.dusanm.models.PopisPageModel;
-import com.ISAProjekat.dusanm.models.UserPageModel;
 import com.ISAProjekat.dusanm.repositories.IPopisRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
@@ -41,11 +39,24 @@ public class PopisService implements IPopisService {
         var existingPopis = popisRepository.findByNaziv(model.getNaziv());
 
         if (existingPopis.isPresent())
-            throw new UserAlreadyExistException("Popis sa nazivom " + model.getNaziv() + " već postoji!");
+            throw new PopisException("Popis sa nazivom " + model.getNaziv() + " već postoji!");
 
-        var savedUser = popisRepository.save(popis);
+        var savedPopis = popisRepository.save(popis);
 
-        return PopisMapper.toModel(savedUser);
+        model.setId(savedPopis.getId());
+        unosUsersPopisTabelu(savedPopis.getId(), model.getUserID());
+
+        return PopisMapper.toModel(savedPopis);
+    }
+
+    private void unosUsersPopisTabelu(int popisID, int userID) {
+        //unos reda u users_popis tabelu
+        try {
+            popisRepository.deleteUserPopis(popisID);
+            popisRepository.insertUserPopis(userID, popisID);
+        } catch (Exception e) {
+            throw new PopisException(e.getMessage());
+    }
     }
 
     @Override
@@ -53,9 +64,10 @@ public class PopisService implements IPopisService {
         var entity = PopisMapper.toEntity(model);
         try {
             var result = popisRepository.save(entity);
+            unosUsersPopisTabelu(result.getId(), model.getUserID());
             return PopisMapper.toModel(result);
         } catch (Exception e) {
-            throw new UserException(e.getMessage());
+            throw new PopisException(e.getMessage());
         }
     }
 

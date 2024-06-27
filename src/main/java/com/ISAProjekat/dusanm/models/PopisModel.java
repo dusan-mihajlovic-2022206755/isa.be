@@ -13,5 +13,5 @@ public class PopisModel {
     private String naziv;
     private String napomena;
     private Boolean active;
-    private int idUser;
+    private int userID;
 }

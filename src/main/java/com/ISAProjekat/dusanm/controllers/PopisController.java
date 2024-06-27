@@ -49,16 +49,20 @@ public class PopisController {
     }
 
     @PostMapping("create")
-    public ResponseEntity<?> create(@RequestBody @Valid PopisModel popisModel, BindingResult result) {
+    public ResponseEntity<?> create(@RequestBody @Valid PopisModel popisModel, Integer userID, BindingResult result) {
         return ResponseEntity.ok(popisService.create(popisModel));
     }
 
     @PostMapping("update")
-    public ResponseEntity<?> update(@RequestBody @Valid PopisModel popisModel, BindingResult result) {
-        if (result.hasErrors()) {
-            return new ResponseEntity<>("Not updated!", HttpStatus.INTERNAL_SERVER_ERROR);
+    public ResponseEntity<?> update(@RequestBody @Valid PopisModel popisModel, Integer userID, BindingResult result) {
+        try {
+            if (result.hasErrors()) {
+                return new ResponseEntity<>("Not updated!", HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+            return ResponseEntity.ok(popisService.update(popisModel));
+        }catch (Exception e){
+            throw e;
         }
-        return ResponseEntity.ok(popisService.update(popisModel));
     }
     @PostMapping("delete")
     public ResponseEntity<?> delete(Integer popisID) {
