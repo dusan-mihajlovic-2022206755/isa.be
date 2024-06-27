@@ -8,12 +8,11 @@ import java.util.Date;
 @Data
 @Builder
 public class PopisStavkaModel {
-
     private int id;
-    private Integer artikalID;
-    private Integer popisID;
+    private String barkod;
+    private String nazivArtikla;
     private Integer userID;
     private Integer kolicina;
+    private Integer popisID;
     private Date vremePopisivanja;
-
 }

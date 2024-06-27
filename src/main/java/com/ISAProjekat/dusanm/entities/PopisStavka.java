@@ -13,8 +13,14 @@ public class PopisStavka {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(name = "barkod")
+    private String barkod;
+
     @Column(name = "id_artikal")
-    private Integer artikalID;
+    private Integer artikalID = 0;
+
+    @Column(name = "naziv_artikla")
+    private String nazivArtikla;
 
     @Column(name = "id_user")
     private Integer userID;

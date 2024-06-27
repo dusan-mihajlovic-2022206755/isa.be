@@ -1,10 +1,12 @@
 package com.ISAProjekat.dusanm.services;
 
+import com.ISAProjekat.dusanm.entities.Popis;
 import com.ISAProjekat.dusanm.entities.PopisStavka;
 import com.ISAProjekat.dusanm.exceptions.user.UserAlreadyExistException;
 import com.ISAProjekat.dusanm.exceptions.user.UserException;
 import com.ISAProjekat.dusanm.mappers.PopisStavkaMapper;
 import com.ISAProjekat.dusanm.models.PopisStavkaModel;
+import com.ISAProjekat.dusanm.repositories.IPopisRepository;
 import com.ISAProjekat.dusanm.repositories.IPopisStavkaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -16,7 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class PopisStavkaService implements IPopisStavkaService {
     private final IPopisStavkaRepository popisStavkaRepository;
-
+    private final IPopisRepository popisRepository;
     @Override
     public List<PopisStavkaModel> findAll() {
         var result = popisStavkaRepository.findAll();
@@ -24,25 +26,38 @@ public class PopisStavkaService implements IPopisStavkaService {
     }
     @Override
     public PopisStavkaModel create(PopisStavkaModel model) {
-        var popisStavka = PopisStavkaMapper.toEntity(model);
 
-        var stavkaPostojiNaPopisu = popisStavkaRepository.checkIfExists(model.getArtikalID(), model.getPopisID());
-        if (!stavkaPostojiNaPopisu) {
+        try {
+            var popisStavka = PopisStavkaMapper.toEntity(model);
+
+            //var stavkaPostojiNaPopisu = popisStavkaRepository.checkIfExists(model.getArtikalID(), model.getPopisID());
+            var stavkaPostojiNaPopisu = false;
+            if (!stavkaPostojiNaPopisu) {
+                popisStavka.setVremePopisivanja(new Date());
+                //staviti ulogovanog user-a
+
+            }
+            else{
+                throw new UserAlreadyExistException("PopisStavka već postoji");
+            }
+            Popis popis = popisRepository.findById(model.getPopisID()).get();
+            popisStavka.setPopis(popis);
             popisStavka.setVremePopisivanja(new Date());
-            //staviti ulogovanog user-a
-
+            var savedStavka = popisStavkaRepository.save(popisStavka);
+            return PopisStavkaMapper.toModel(savedStavka);
+        } catch (Exception e) {
+            throw e;
         }
-        else{
-            throw new UserAlreadyExistException("PopisStavka već postoji");
-        }
-        var savedStavka = popisStavkaRepository.save(popisStavka);
-        return PopisStavkaMapper.toModel(savedStavka);
     }
 
     @Override
     public PopisStavkaModel update(PopisStavkaModel model) {
-        var entity = PopisStavkaMapper.toEntity(model);
         try {
+        var entity = PopisStavkaMapper.toEntity(model);
+
+            Popis popis = popisRepository.findById(model.getPopisID()).get();
+            entity.setPopis(popis);
+            entity.setVremePopisivanja(new Date());
             var result = popisStavkaRepository.save(entity);
             return PopisStavkaMapper.toModel(result);
         } catch (Exception e) {

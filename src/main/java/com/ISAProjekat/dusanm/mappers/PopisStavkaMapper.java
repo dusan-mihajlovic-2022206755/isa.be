@@ -15,21 +15,26 @@ public class PopisStavkaMapper {
     public static PopisStavka toEntity(PopisStavkaModel model) {
         PopisStavka popisStavka = new PopisStavka();
         popisStavka.setId(model.getId());
-        popisStavka.setArtikalID(model.getArtikalID());
+        popisStavka.setArtikalID(0); //TODO
         popisStavka.setUserID(model.getUserID());
         popisStavka.setKolicina(model.getKolicina());
+        popisStavka.setNazivArtikla(model.getNazivArtikla());
+        popisStavka.setBarkod(model.getBarkod());
         popisStavka.setVremePopisivanja(model.getVremePopisivanja());
-//        Popis popis = fetchPopisById(model.getPopisID()); // Replace with your actual method to fetch Popis
-//        popisStavka.setPopis(popis);
+       // Popis popis = fetchPopisById(model.getPopisID());
+//      popisStavka.setPopis(popis);
+       // popisStavka.setVremePopisivanja(model.getVremePopisivanja());
+//
         return popisStavka;
     }
 
     public static PopisStavkaModel toModel(PopisStavka entity) {
         return PopisStavkaModel.builder()
                 .id(entity.getId())
-                .artikalID(entity.getArtikalID())
+                .nazivArtikla(entity.getNazivArtikla())
                 .userID(entity.getUserID())
                 .kolicina(entity.getKolicina())
+                .barkod(entity.getBarkod())
                 .vremePopisivanja(entity.getVremePopisivanja())
                 .build();
     }
