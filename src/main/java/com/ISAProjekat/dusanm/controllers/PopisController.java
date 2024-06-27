@@ -4,6 +4,7 @@ import com.ISAProjekat.dusanm.entities.Popis;
 import com.ISAProjekat.dusanm.entities.User;
 import com.ISAProjekat.dusanm.enums.RoleEnum;
 import com.ISAProjekat.dusanm.mappers.PopisMapper;
+import com.ISAProjekat.dusanm.models.PopisAddEditModel;
 import com.ISAProjekat.dusanm.models.PopisModel;
 import com.ISAProjekat.dusanm.models.PopisPageModel;
 import com.ISAProjekat.dusanm.repositories.IPopisRepository;
@@ -49,12 +50,14 @@ public class PopisController {
     }
 
     @PostMapping("create")
-    public ResponseEntity<?> create(@RequestBody @Valid PopisModel popisModel, BindingResult result) {
-        return ResponseEntity.ok(popisService.create(popisModel));
+    public ResponseEntity<?> create(@RequestBody @Valid PopisAddEditModel popisModel, BindingResult result) {
+
+        PopisModel pop = popisService.create(popisModel);
+        return ResponseEntity.ok(pop);
     }
 
     @PostMapping("update")
-    public ResponseEntity<?> update(@RequestBody @Valid PopisModel popisModel, BindingResult result) {
+    public ResponseEntity<?> update(@RequestBody @Valid PopisAddEditModel popisModel, BindingResult result) {
         if (result.hasErrors()) {
             return new ResponseEntity<>("Not updated!", HttpStatus.INTERNAL_SERVER_ERROR);
         }

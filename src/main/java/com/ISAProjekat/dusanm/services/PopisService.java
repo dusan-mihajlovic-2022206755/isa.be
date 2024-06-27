@@ -35,9 +35,9 @@ public class PopisService implements IPopisService {
         return PopisMapper.toModelPagedList(result);
     }
     @Override
-    public PopisModel create(PopisModel model) {
+    public PopisModel create(PopisAddEditModel model) {
         var popis = PopisMapper.toEntity(model);
-
+        int roleID = popisModel.getRoleID();
         var existingPopis = popisRepository.findByNaziv(model.getNaziv());
 
         if (existingPopis.isPresent())
@@ -49,7 +49,7 @@ public class PopisService implements IPopisService {
     }
 
     @Override
-    public PopisModel update(PopisModel model) {
+    public PopisModel update(PopisAddEditModel model) {
         var entity = PopisMapper.toEntity(model);
         try {
             var result = popisRepository.save(entity);
